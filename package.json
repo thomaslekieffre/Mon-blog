@@ -1,0 +1,18 @@
+{
+  "name": "mon-blog-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
