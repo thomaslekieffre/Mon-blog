@@ -5,23 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap" rel="stylesheet" />
-    <script src="./index.js" type="module"></script>
+    <title>Blog</title>
+    <script src="./form.js" type="module"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
             <a class="header-brand" href="/">Blog</a>
-            <ul>
-                <li>
-                    <a href="./index.html" class="header-nav">Accueil</a>
-                </li>
-                <li>
-                    <a href="./form.html" class="header-nav active">Créer un article</a>
-                </li>
-            </ul>
+            <div class="header-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="header-nav">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./form.html" class="header-nav active">Créer un article</a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <div class="content">
             <form>
@@ -35,11 +37,11 @@
                     <input type="text" name="img" />
                 </div>
                 <div class="form-group">
-                    <label>Catégorie</label>
+                    <label>Categorie</label>
                     <input type="text" name="category" />
                 </div>
                 <div class="form-group">
-                    <label>titre</label>
+                    <label>Titre</label>
                     <input type="text" name="title" />
                 </div>
                 <div class="form-group">
