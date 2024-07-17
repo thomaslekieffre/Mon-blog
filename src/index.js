@@ -1,4 +1,5 @@
 import "./assets/styles/styles.scss";
+import "./assets/javascripts/topbar.js";
 import "./index.scss";
 
 const articleContainerElement = document.querySelector(".articles-container");
