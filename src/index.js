@@ -1,5 +1,4 @@
 import "./assets/styles/styles.scss";
-import "./assets/javascripts/topbar.js";
 import "./index.scss";
 
 const articleContainerElement = document.querySelector(".articles-container");
@@ -14,7 +13,14 @@ const createArticles = (articles) => {
   alt="profile"
 />
 <h2>${article.title}</h2>
-<p class="article-author">${article.author} - ${article.category}</p>
+<p class="article-author">${article.author} - ${new Date(
+      article.createdAt
+    ).toLocaleDateString("fr-FR", {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    })}</p>
 <p class="article-content">
   ${article.content}
 </p>
