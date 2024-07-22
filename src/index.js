@@ -26,6 +26,7 @@ const createArticles = (articles) => {
 </p>
 <div class="article-actions">
   <button class="btn btn-danger" data-id=${article._id} >Supprimer</button>
+  <button class="btn btn-primary" data-id=${article._id} >Modifier</button>
 </div>
 `;
     return articleDOM;
@@ -33,6 +34,14 @@ const createArticles = (articles) => {
   articleContainerElement.innerHTML = "";
   articleContainerElement.append(...articlesDOM);
   const deleteButtons = articleContainerElement.querySelectorAll(".btn-danger");
+  const editButtons = articleContainerElement.querySelectorAll(".btn-primary");
+  editButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const target = event.target;
+      const articleId = target.dataset.id;
+      window.location.assign(`/form/form.html?id=${articleId}`);
+    });
+  });
   deleteButtons.forEach((button) => {
     button.addEventListener("click", async (event) => {
       try {
