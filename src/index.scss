@@ -1,4 +1,4 @@
-@use "./assets/styles/media-queries" as *;
+@import "./assets/styles/media-queries";
 
 .content {
   background: var(--divider);
@@ -9,6 +9,16 @@
   .sidebar {
     flex: 0 0 25rem;
     padding: 0 2rem 2rem 2rem;
+    select {
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: 0.3rem;
+      background: white;
+      border: 0;
+      outline: 0;
+      padding: 1rem;
+      box-shadow: var(--box-shadow);
+    }
     .categories {
       padding: 2rem;
       background: white;
@@ -23,6 +33,13 @@
           strong {
             color: var(--primary);
           }
+        }
+      }
+      .active {
+        color: var(--primary);
+        font-weight: 700;
+        strong {
+          color: var(--primary);
         }
       }
     }
